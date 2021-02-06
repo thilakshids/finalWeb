@@ -1,0 +1,34 @@
+
+.hove{
+
+    display: flex;
+  height: 85vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background: rgb(59, 59, 59);
+} 
+.tab{
+    position: absolute;
+    height: 500px;
+    width:500px;
+    left:100px;
+    top:120px;
+}
+
+
+
+.th{
+    background-color:orangered;
+
+    font-size: 15px;
+
+     
+}
+
+.tb{
+    background-color: black;
+    color: white;
+    font-size: 12px;
+
+}

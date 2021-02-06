@@ -1,0 +1,48 @@
+.carosl{
+    width: 92%;
+    height: 500px;   
+}
+
+.img1{
+    width: 92%;
+    height: 500px;
+}
+
+.img2{
+    width: 92%;
+    height: 500px;
+}
+
+.img3{
+    width: 92%;
+    height: 500px;
+}
+
+.input-group{
+    width: 500px;
+    margin-left: 1000px;
+}
+
+.input-group-prepend{
+    width: 500px;
+    margin-left: 1000px;
+}
+
+.input-group-text {
+    width: 500px;
+    margin-left: 1000px;
+}
+
+input{
+    display: inline-block;
+    width: 100px;
+}
+
+.counter{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.text{
+    text-align: center;
+}

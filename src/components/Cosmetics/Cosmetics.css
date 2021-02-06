@@ -1,0 +1,13 @@
+input{
+    display: inline-block;
+    width: 100px;
+}
+
+.counter{
+    margin-left: 10px;
+    margin-right: 110px;
+}
+
+.text{
+    text-align: center;
+}

@@ -1,0 +1,173 @@
+.containers {
+    background-color:rgb(59, 59, 59);
+    padding: 33rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .telo{
+    position: absolute;
+    background-color:white;
+    left: 500px;
+    top:200px;
+    height: 370px;
+    width: 400px;
+    border-color: black;
+    border-radius: 8px;
+    box-shadow: 2apx 2px black ;
+    border-style: solid;
+    border-collapse: separate;
+  }
+
+
+  .form-control1{
+      color: black;
+      left:100px;
+      top:40px;
+      position: absolute;
+      width: 250px;
+      border-color:black;
+  }
+
+  .form-control2{
+    color: black;
+    left:100px;
+    top:80px;
+    position: absolute;
+    width: 250px;
+    border-color:black;
+}
+
+.form-control3{
+    color: black;
+    left:100px;
+    top:120px;
+    position: absolute;
+    width: 250px;
+    border-color:black;
+}
+
+.form-control4{
+    color: black;
+    left:100px;
+    top:160px;
+    position: absolute;
+    width: 250px;
+    border-color:black;
+}
+
+.t5{
+    top:110px;
+    left:150px;
+    position: absolute;
+    font-size: 40px;
+    font-family: 'Coda Caption', sans-serif;
+    color: #ffffff;
+}
+
+.btno{
+    background-color: black;
+    color: white;
+    left:150px;
+    top:320px;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.lbl1{
+    color:black;
+    background-color:white;
+    left:20px;
+    top:40px;
+    position: absolute;
+    width: 50px;
+}
+
+.lbl2{
+    color:black;
+    background-color:white;
+ 
+    left:20px;
+    top:80px;
+    position: absolute;
+    width: 50px;
+}
+
+.lbl3{
+    color:black;
+    background-color:white;
+    left:20px;
+    top:120px;
+    position: absolute;
+    width: 50px;
+}
+
+.lbl4{
+    color:black;
+    background-color:white;
+    left:20px;
+    top:160px;
+    position: absolute;
+    width: 50px;
+}
+
+@media screen and (max-width: 820px) {
+    .t5 {
+       padding-top: 2rem; 
+      left:5px;
+      font-size: 30px; 
+      
+    }
+  
+    .telo {
+    
+        left:40px;
+        flex-direction: column;
+        top:220px;
+    }
+
+    .containers{
+        padding: 33rem 0 2rem 0;
+    }
+  
+   
+  }
+  
+  @media screen and (max-width: 500px) {
+
+    .telo{
+        left:10px;
+        width: 340px;
+        top:235px;
+    }
+
+    .form-control4{
+       
+        left:70px;
+      
+    }
+    
+    .form-control3{
+       
+        left:75px;
+      
+    }
+    .form-control1{
+        left: 70px;
+    }
+    .form-control2{
+        left: 70px;
+    }
+    .t5 {
+        padding-top: 2rem; 
+       left:5px;
+       font-size: 25px; 
+       
+     }
+  }
+  

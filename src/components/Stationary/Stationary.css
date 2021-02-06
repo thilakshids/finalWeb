@@ -1,0 +1,23 @@
+
+.it{
+    width:100%;
+    height:70%;
+    position: absolute;
+    top:60px;
+    background-color:white;
+  }
+
+  
+  input{
+    display: inline-block;
+    width: 100px;
+}
+
+.counter{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.text{
+    text-align: center;
+}
