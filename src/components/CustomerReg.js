@@ -1,6 +1,11 @@
 import React,{Component} from 'react';
-//  import { Card, ListGroup } from 'react-bootstrap';
+import { Card, ListGroup } from 'react-bootstrap';
+// import Card from "react-bootstrap/Card";
+// import ListGroup from "react-bootstrap/ListGroup";
 import './CustomerReg.css';
+import TermsAndConditionsModal from './TermsAndConditionsModal';
+
+
 class CustomerReg extends Component {
 
     constructor() {
@@ -151,9 +156,9 @@ class CustomerReg extends Component {
 
   render() {
     return (
-     <card className="cos">
-     <card className="main-registration-container">
-     <card className="regi">
+     <Card className="cos">
+     <Card className="main-registration-container">
+     <Card className="regi">
         {/* <h3> Register Here</h3> */}
         <form method="post"  name="userRegistrationForm"  onSubmit= {this.submituserRegistrationForm} >
         <label>Name:</label>
@@ -174,28 +179,39 @@ class CustomerReg extends Component {
         <label>Account Number:</label>
         <input type="text" name="account" value={this.state.fields.account} onChange={this.handleChange} />
         <div className="errorMsg">{this.state.errors.account}</div>
-      
         <label>
-        <input
-          name="acceptedTerms"
-          type="checkbox"
-          className="che"
-       //onChange={e => setAcceptedTerms(e.target.value)}
-          required />
-        I accept the terms of service
-      </label>
-        <input type="submit" onClick={this.login}  className="button"  value="Register"/>
-       
-        </form>
-    </card>
-</card>
-</card>
-
-      );
+                {/* <input
+                  name="acceptedTerms"
+                  type="checkbox"
+                  onChange={(e) =>
+                    this.setState({
+                      isAccepted: e.target.checked,
+                    })
+                  }
+                  required
+                /> */}
+                I accept the{" "}
+                <a 
+                  style={{
+                    textDecoration: "underline",
+                    color: "blue",
+                    cursor: "pointer"
+                  }}
+                  onClick={() => this.setState({ isTCModalVisible: true })}>
+                  terms of service
+                </a>
+                <TermsAndConditionsModal
+                  show={this.state.isTCModalVisible}
+                  onHide={() => this.setState({ isTCModalVisible: false })}
+                />
+              </label>
+              <input type="submit" className="button" value="Register" />
+            </form>
+          </Card>
+        </Card>
+      </Card>
+    );
   }
-
-
 }
-
 
 export default CustomerReg;

@@ -20,6 +20,7 @@ import Cosmetics from './components/Cosmetics/Cosmetics';
 import Devices from './components/Devices/Devices';
 import Stationary from './components/Stationary/Stationary';
 import Online from './components/Online';
+// import TermsAndConditionsModal from './components/TermsAndConditionsModal';
 
 function App() {
   return (
@@ -45,6 +46,8 @@ function App() {
           <Route path='/cosmetics' component={Cosmetics} />
           <Route path='/online' component={Online} />
           <Route path='/qrcode' component={Qrcode} />
+        
+
          
         </Switch>
       </Router>

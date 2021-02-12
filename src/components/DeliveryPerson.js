@@ -1,7 +1,8 @@
 
 import React,{Component} from 'react';
-//  import { Card, ListGroup } from 'react-bootstrap';
+import { Card, ListGroup } from 'react-bootstrap';
 import './DeliveryPerson.css';
+import TermsAndConditionsModal from "./TermsAndConditionsModal";
 class DeliveryPerson extends Component {
 
     constructor() {
@@ -176,7 +177,7 @@ class DeliveryPerson extends Component {
         <input type="text" name="account" value={this.state.fields.account} onChange={this.handleChange} />
         <div className="errorMsg">{this.state.errors.account}</div>
       
-        <label>
+        {/* <label>
         <input
           name="acceptedTerms"
           type="checkbox"
@@ -198,5 +199,41 @@ class DeliveryPerson extends Component {
 
 }
 
+
+export default DeliveryPerson; */}
+<label>
+                <input
+                  name="acceptedTerms"
+                  type="checkbox"
+                  onChange={(e) =>
+                    this.setState({
+                      isAccepted: e.target.checked,
+                    })
+                  }
+                  required
+                />
+                I accept the{" "}
+                <a 
+                  style={{
+                    textDecoration: "underline",
+                    color: "blue",
+                    cursor: "pointer"
+                  }}
+                  onClick={() => this.setState({ isTCModalVisible: true })}>
+                  terms of service
+                </a>
+                <TermsAndConditionsModal
+                  show={this.state.isTCModalVisible}
+                  onHide={() => this.setState({ isTCModalVisible: false })}
+                />
+              </label>
+              <input type="submit" className="button" value="Register" />
+            </form>
+          </card>
+        </card>
+      </card>
+    );
+  }
+}
 
 export default DeliveryPerson;

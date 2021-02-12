@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
-//  import { Card, ListGroup } from 'react-bootstrap';
+ import { Card, ListGroup } from 'react-bootstrap';
 import './shopReg.css';
+import TermsAndConditionsModal from "./TermsAndConditionsModal";
 class shopReg extends Component {
 
     constructor() {
@@ -190,7 +191,7 @@ class shopReg extends Component {
         <input type="text" name="bisreg" value={this.state.fields.bisreg} onChange={this.handleChange} />
         <div className="errorMsg">{this.state.errors.bisreg}</div>
       
-        <label>
+        {/* <label>
         <input
           name="acceptedTerms"
           type="checkbox"
@@ -212,5 +213,42 @@ class shopReg extends Component {
 
 }
 
+
+export default shopReg; */}
+
+<label>
+                <input
+                  name="acceptedTerms"
+                  type="checkbox"
+                  onChange={(e) =>
+                    this.setState({
+                      isAccepted: e.target.checked,
+                    })
+                  }
+                  required
+                />
+                I accept the{" "}
+                <a 
+                  style={{
+                    textDecoration: "underline",
+                    color: "blue",
+                    cursor: "pointer"
+                  }}
+                  onClick={() => this.setState({ isTCModalVisible: true })}>
+                  terms of service
+                </a>
+                <TermsAndConditionsModal
+                  show={this.state.isTCModalVisible}
+                  onHide={() => this.setState({ isTCModalVisible: false })}
+                />
+              </label>
+              <input type="submit" className="button" value="Register" />
+            </form>
+          </card>
+        </card>
+      </card>
+    );
+  }
+}
 
 export default shopReg;

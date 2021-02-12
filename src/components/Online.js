@@ -121,15 +121,20 @@ class Online extends Component {
             <div className="exdate">
               <label className="lbl" htmlFor="exp date">Expiration Date</label>
               &nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;
               &nbsp;
+             
+             
               <input
                 placeholder="exp date"
                 type="text"
                 name="expiration date"
                 className="xcs"
               />
+              
             </div>
-
+            
+             
             <div className="securitcode">
               <label  className="lbl" htmlFor="security code">Security code</label>
               &nbsp;&nbsp;&nbsp;
@@ -143,7 +148,7 @@ class Online extends Component {
             </div>
 
             <div className="cartype">
-              <label  className="lbl" htmlFor="card type">Card type</label>
+              <label  className="lbl" htmlFor="card type">cvv Number</label>
               &nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;
@@ -170,7 +175,8 @@ class Online extends Component {
           </form>
 
           <div className="save"><center>
-              <button type="save">Save &nbsp;&nbsp;&nbsp;</button></center>
+              <button>Save &nbsp;&nbsp;&nbsp;</button></center> 
+        
             </div>
         </div>
       </div>
